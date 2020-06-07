@@ -22,7 +22,7 @@ namespace Library_Management.DAL
         public bool AddTV(DTO.DTO_ThanhVien TV)
         {
            
-                connection.Open();
+                
                 string SQL = "EXEC USP_INSERT_TV @IDTV , @hoten , @diachi , @sdt , @CMND , @ngaydangki , @ngayhethan , @ngaysinh , @IDLTV , @email , @Image , @Gioitinh ";
                 return DAL_EX.Instance.ExcuteReader(SQL, new object[] { TV.ThanhVien_ID, 
                                                                         TV.HoTen_TV, 
